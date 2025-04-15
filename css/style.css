@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Designer;
+    src: url(../media/fonts/Designer.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../media/images/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Barra de navegação da página */
+.nav-bar{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #480469;
+}
+.nav-bar div{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.nav-bar .title{
+    align-self: center;
+    margin-inline-start: 15vh;
+    margin-inline-end: 15vh;
+}
+
+.nav-bar .title a{
+    font-family: Designer;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar .buttons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 3vh;
+    padding-block: 4vh;
+    width: 10vh;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar .buttons{
+    margin-inline-end: 10vh;
+}
+
+.nav-bar .buttons a:hover{
+    background-color: blueviolet;
+}
+
+/* Fim da barra de navegação da página */
+
+/* Formulário */
+
+section{
+    margin-top: 10vh;
+    align-self: center;
+    justify-self: center;
+    color: white;
+}
+
+section div .title-form{
+    font-family: Designer;
+    align-self: center;
+}
+
+.form{
+    background-color: #480469;
+    padding-block-start: 5vh;
+    padding-inline: 3vh;
+    width: 45vh;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+} 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="buttons">
+                <a href=""><div>Login</div></a>
+                <a href=""><div>Cadastrar</div></a>
+            </div>
+            <div class="title">
+                <a href="">Cadastrator</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="form">
+            <label class="title-form" for="cadastro">Cadastrar</label>
+            <form name="cadastro" action="#" method="post">
+                <input name="nome" type="text" placeholder="Nome completo" required>
+
+                <input nome="email" type="email" placeholder="Email" required>
+
+                <input nome="telefone" type="tel" placeholder="Telefone" required>
+
+                <input name="nasc" type="date" placeholder="DD/MM/AAAA" required>
+                
+                <label for="M">Masculino</label>
+                    <input name="M" type="radio" id="Masculino" value="M">
+                <label for="F">Feminino</label>
+                    <input name="F" type="radio" id="Feminino" value="F">
+                    
+                <input type="submit">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
