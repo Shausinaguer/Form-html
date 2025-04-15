@@ -3,7 +3,6 @@
     src: url(../media/fonts/Designer.otf);
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -75,13 +74,15 @@ section{
 
 section div .title-form{
     font-family: Designer;
+    font-size: 30px;
     align-self: center;
 }
 
-.form{
+.formulario{
     background-color: #480469;
     padding-block-start: 5vh;
-    padding-inline: 3vh;
+    padding-block-end: 3vh;
+    padding-inline: 2vh;
     width: 45vh;
     border-radius: 7%;
     display: flex;
