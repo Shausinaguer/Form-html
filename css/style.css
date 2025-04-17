@@ -14,6 +14,7 @@ body{
     background-image: url(../media/images/bgimage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #1e003c;
 }
 
 /* Barra de navegação da página */
@@ -82,8 +83,11 @@ section div .title-form{
     background-color: #480469;
     padding-block-start: 5vh;
     padding-block-end: 3vh;
-    padding-inline: 2vh;
-    width: 45vh;
+    padding-inline: 2vw;
+    width: 30vw;
+    min-width: 350px;
+    min-height: 230px;
+    height: 40vh;
     border-radius: 7%;
     display: flex;
     flex-direction: column;
@@ -92,4 +96,23 @@ section div .title-form{
 form{
     display: flex;
     flex-direction: column;
-} 
+}
+
+form .Enviar{
+    background-color: lightgreen;
+    color: black;
+    margin-inline: 25%;
+}
+
+.input{
+    background-color: #1e003c;
+    color: white;
+    padding-left: 10px;
+    padding-block: 5px;
+}
+
+input{
+    margin-bottom: 10px;
+    border-radius: 0%;
+    border: 0;
+}
