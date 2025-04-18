@@ -6,6 +6,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -67,6 +68,7 @@ body{
 /* Formulário */
 
 section{
+    display: flex;
     margin-top: 10vh;
     align-self: center;
     justify-self: center;
@@ -74,9 +76,11 @@ section{
 }
 
 section div .title-form{
+    display: flex;
     font-family: Designer;
     font-size: 30px;
     align-self: center;
+    margin-bottom: 10px;
 }
 
 .formulario{
@@ -86,11 +90,11 @@ section div .title-form{
     padding-inline: 2vw;
     width: 30vw;
     min-width: 350px;
-    min-height: 230px;
-    height: 40vh;
     border-radius: 7%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
 }
 
 form{
@@ -98,10 +102,19 @@ form{
     flex-direction: column;
 }
 
-form .Enviar{
-    background-color: lightgreen;
-    color: black;
-    margin-inline: 25%;
+.Enviar{
+    background-color: #480469;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-block: 10px;
+}
+
+.Enviar:hover{
+    background-color: blueviolet;
+    cursor: pointer;
 }
 
 .input{
@@ -109,10 +122,46 @@ form .Enviar{
     color: white;
     padding-left: 10px;
     padding-block: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 4vh;
 }
 
 input{
-    margin-bottom: 10px;
+    display: flex;
     border-radius: 0%;
     border: 0;
+}
+
+.container-sexo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.container-sexo label{
+    font-weight: bolder;
+}
+
+.input-sexo{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 20px 20px;
+}
+
+.sexo{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.radio{
+    margin-right: 10px;
 }

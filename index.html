@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <div class="nav-bar">
             <div class="buttons">
-                <a href=""><div>Login</div></a>
-                <a href=""><div>Cadastrar</div></a>
+                <a href="">
+                    <div>Login</div>
+                </a>
+                <a href="">
+                    <div>Cadastrar</div>
+                </a>
             </div>
             <div class="title">
                 <a href="">Cadastrator</a>
@@ -29,10 +35,32 @@
                 <input class="input" nome="telefone" type="tel" placeholder="Telefone" required>
 
                 <input class="input" name="nasc" type="date" placeholder="DD/MM/AAAA" required>
-                    
+
+                <textarea class="input" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui" required></textarea>
+
+                <div class="container-sexo">
+
+                    <label class="title-sexo" for="sexo">Genero</label>
+
+                    <div class="input-sexo">
+
+                        <div class="sexo">
+                            <input class="radio" name="sexo" type="radio" value="masculino" required> Masculino
+                        </div>
+
+                        <div class="sexo">
+                            <input class="radio" name="sexo" type="radio" value="outro" required> Feminino
+                        </div>
+                    </div>
+
+
+                </div>
+
                 <input class="Enviar" type="submit" value="Enviar">
+
             </form>
         </div>
     </section>
 </body>
+
 </html>
