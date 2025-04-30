@@ -15,4 +15,6 @@ $stmt = $pdo->query($sql);
 
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+header("Location:listadecadastro.php");
+exit;
 ?>
