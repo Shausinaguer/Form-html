@@ -3,13 +3,13 @@
     src: url(../media/fonts/Designer.otf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     background-image: url(../media/images/bgimage.jpg);
@@ -19,32 +19,33 @@ body{
 }
 
 /* Barra de navegação da página */
-.nav-bar{
+.nav-bar {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     background-color: #480469;
 }
-.nav-bar div{
+
+.nav-bar div {
     display: flex;
     flex-direction: row;
     margin: 0;
 }
 
-.nav-bar .title{
+.nav-bar .title {
     align-self: center;
     margin-inline-start: 15vh;
     margin-inline-end: 15vh;
 }
 
-.nav-bar .title a{
+.nav-bar .title a {
     font-family: Designer;
     font-size: 50px;
     color: white;
     text-decoration: none;
 }
 
-.nav-bar .buttons div{
+.nav-bar .buttons div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,11 +56,11 @@ body{
     color: white;
 }
 
-.nav-bar .buttons{
+.nav-bar .buttons {
     margin-inline-end: 10vh;
 }
 
-.nav-bar .buttons a:hover{
+.nav-bar .buttons a:hover {
     background-color: blueviolet;
 }
 
@@ -67,7 +68,7 @@ body{
 
 /* Formulário */
 
-section{
+section {
     display: flex;
     margin-top: 10vh;
     align-self: center;
@@ -75,7 +76,7 @@ section{
     color: white;
 }
 
-section div .title-form{
+section div .title-form {
     display: flex;
     font-family: Designer;
     font-size: 30px;
@@ -83,7 +84,7 @@ section div .title-form{
     margin-bottom: 10px;
 }
 
-.formulario{
+.formulario {
     background-color: #480469;
     padding-block-start: 5vh;
     padding-block-end: 3vh;
@@ -97,12 +98,12 @@ section div .title-form{
     justify-items: center;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
 }
 
-.Enviar{
+.Enviar {
     background-color: #480469;
     color: white;
     text-align: center;
@@ -112,12 +113,12 @@ form{
     padding-block: 10px;
 }
 
-.Enviar:hover{
+.Enviar:hover {
     background-color: blueviolet;
     cursor: pointer;
 }
 
-.input{
+.input {
     background-color: #1e003c;
     color: white;
     padding-left: 10px;
@@ -127,24 +128,24 @@ form{
     height: 4vh;
 }
 
-input{
+input {
     display: flex;
     border-radius: 0%;
     border: 0;
 }
 
-.container-sexo{
+.container-sexo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.container-sexo label{
+.container-sexo label {
     font-weight: bolder;
 }
 
-.input-sexo{
+.input-sexo {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -155,13 +156,66 @@ input{
     padding: 20px 20px;
 }
 
-.sexo{
+.sexo {
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
 }
 
-.radio{
+.radio {
     margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: #480469;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.container .title {
+    font-weight: bolder;
+    margin-block: 10px;
+    text-align: center;
+    font-family: Designer;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: #1e003c;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(150px, 5fr));
+    align-items: center;
+    font-weight: bolder;
+    margin-block: 10px;
+    text-align: left;
+    color: rgb(138, 138, 138);
+    padding-inline: 10px;
+    gap: 10px;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(150px, 5fr));
+    align-items: center;
+    margin-block: 10px;
+    text-align: left;
+    padding-inline: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+    color: white;
 }

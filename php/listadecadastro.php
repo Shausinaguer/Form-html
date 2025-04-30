@@ -30,9 +30,12 @@ echo "<head>
         </div>
     </header>
     <section>
-        <div class='formulario'>
-            <table>
-                <tr>
+        <div class='container'>
+            <div class='title'>
+                <h1>Usuários Cadastrados</h1>
+            </div>
+            <table class='table'>
+                <tr class='table-header'>
                     <th>ID</th>
                     <th>Nome</th>
                     <th>Email</th>
@@ -43,17 +46,17 @@ echo "<head>
                 </tr>";
 
                 while($rows = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                echo "<tr>
+                echo "<tr class='table-row'>
                     <td>". $rows['id'] . "</td>
-                    <td>". $rows['nome'] . "</td>
-                    <td>". $rows['email'] . "</td>
-                    <td>". $rows['tel'] . "</td>
-                    <td>". $rows['nasc'] . "</td>
-                    <td>". $rows['mensagem'] . "</td>
+                    <td>". substr($rows['nome'], 0, 10) . (strlen($rows['nome']) > 10 ? '...' : '') . "</td>
+                    <td>". substr($rows['email'], 0, 10) . (strlen($rows['email']) > 10 ? '...' : '') . "</td>
+                    <td>". substr($rows['tel'], 0, 10) . (strlen($rows['tel']) > 10 ? '...' : '') . "</td>
+                    <td>". substr($rows['nasc'], 0, 10) . (strlen($rows['nasc']) > 10 ? '...' : '') . "</td>
+                    <td>". substr($rows['mensagem'], 0, 10) . (strlen($rows['mensagem']) > 10 ? '...' : '') . "</td>
                     <td>". $rows['sexo'] . "</td>
                 </tr>";
                 };
-        echo "</table>            
+        echo "</table>
         </div>
     </section>
 </body>";
